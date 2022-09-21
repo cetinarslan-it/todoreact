@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Register from "./Components/Register";
+import TodoList from "./Components/TodoList";
 import { v4 as uuidv4 } from "uuid";
 import "./App.css";
 
@@ -26,9 +27,18 @@ const App = () => {
     saveData(todos);
   };
 
- 
+  const removeTodo = (id) => {
+    setTodos(todos.filter((todo) => todo.id !== id));
+  };
 
- 
+  const toggleTodo = (id) => {
+    setTodos(
+      todos.map((todo) =>
+        todo.id === id ? { ...todo, completed: !todo.completed } : todo
+      )
+    );
+    saveData(todos);
+  };
 
   return (
     <article className="App">
@@ -36,6 +46,11 @@ const App = () => {
         <h1 class="header-title">Cetin's ToDo List</h1>
       </header>
       <Register addTodo={addTodo} />
+      <TodoList
+        todos={todos}
+        toggleTodos={toggleTodo}
+        removeTodos={removeTodo}
+      />
       <footer class="footer">
         <p>Copyright&copy; 2022 - All rights reserved.</p>
       </footer>
