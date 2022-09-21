@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-color: ghostwhite;
+}
+
+.header{  
+  position:fixed;
+  top:0;
+  z-index:5;
+  background-color:rgb(197, 196, 196); 
+  width:100vw;
+  height:6rem;
+  border: 1px solid black;
+}
+
+.footer{  
+  position:fixed;
+  bottom:0;
+  z-index:5;
+  background-color:rgb(197, 196, 196); 
+  width:100vw;
+  height:3rem;
+  border: 1px solid black;
+}
+
+.footer>p{
+  text-align:center;
+  margin-top:0.8rem;
+  font-weight:bold;
+}
+
+.header-title{
+font-size: 3rem;
+text-align: center;
+margin-top:1rem
+}
+
+.todo-create__header {
+  position: absolute;
+  margin-left:2%;
+  font-size: 0.8em;
+  padding: 5px;
+  left: 8px;
+  top: -12px;
+  background: white;
+  border: 1px solid rgb(139, 139, 139);
+  border-radius: 10px;
+}
+.todo-create__form {
+  position: relative;
+  max-width: 370px;
+  min-width: 365px;
+  height: 180px;
+  top:6rem;
+  margin: 60px auto 5px;
+  background: rgb(197, 196, 196);
+  padding: 20px 10px 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+.todo-create__title,
+.todo-create__note {
+  width: 100%;
+  margin: 7px auto;
+  border: 1px solid;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 7px;
+}
+.todo-create__button {
+  position: absolute;
+  font-size: 1em;
+  right: 10px;
+  bottom: 10px;
+  background: rgb(46, 46, 46);
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  width: 65px;
+  height: 25px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
