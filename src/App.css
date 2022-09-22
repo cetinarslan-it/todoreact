@@ -102,10 +102,11 @@ body{
   background: rgb(203, 241, 227);
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
-  min-height: 150px;
+  min-height: 90px;
   padding: 10px;
   word-wrap: break-word;
   width: 370px;
+  height: 90px;
   margin: 5px auto; 
 } 
 
@@ -116,10 +117,11 @@ body{
   text-align: justify;
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
-  min-height: 150px;
+  min-height: 90px;
   padding: 10px;
   padding-bottom: 40px;
   width: 370px;
+  height: 90px;
   margin: 5px auto;
   background-color: rgb(140, 140, 140);
   text-decoration: line-through;
